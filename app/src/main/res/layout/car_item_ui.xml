@@ -3,11 +3,11 @@
 
     <data>
 
-        <import type="com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem" />
+        <import type="com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarDataItem" />
 
         <variable
             name="carDataItem"
-            type="com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem" />
+            type="com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarDataItem" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,6 +17,7 @@
 
         <ImageView
             android:id="@+id/car_image"
+            imageFromURL="@{carDataItem.imageUrl}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
@@ -28,15 +29,17 @@
             android:id="@+id/car_model_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{carDataItem.brand}"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/car_image" />
 
         <TextView
-            android:id="@+id/is_car_new"
+            android:id="@+id/is_car_used"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{`is the Car used ?  `+ carDataItem.isUsed}"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,8 +48,10 @@
             />
 
         <TextView
+            android:id="@+id/car_construction_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{carDataItem.constractionYear}"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"

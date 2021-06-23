@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view_models;
+package com.dev_abdallah_el_zoka.softxpert_android_task.view_models;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
@@ -8,9 +8,9 @@ import androidx.paging.PagingConfig;
 import androidx.paging.PagingData;
 import androidx.paging.PagingLiveData;
 
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.api.WebServices;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.paging.CarModelsPagingSource;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.api.WebServices;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarDataItem;
+import com.dev_abdallah_el_zoka.softxpert_android_task.paging.CarModelsPagingSource;
 
 import javax.inject.Inject;
 

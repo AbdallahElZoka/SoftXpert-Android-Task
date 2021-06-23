@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo;
+package com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo;
 
 import com.google.gson.annotations.SerializedName;
 

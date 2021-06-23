@@ -1,13 +1,13 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.paging;
+package com.dev_abdallah_el_zoka.softxpert_android_task.paging;
 
 import android.util.Log;
 
 import androidx.paging.PagingSource;
 import androidx.paging.PagingState;
 
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.api.WebServices;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarApiResponse;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.api.WebServices;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarApiResponse;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarDataItem;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

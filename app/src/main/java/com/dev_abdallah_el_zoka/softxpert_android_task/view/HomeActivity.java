@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view;
+package com.dev_abdallah_el_zoka.softxpert_android_task.view;
 
 import android.os.Bundle;
 
@@ -6,14 +6,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view.adpaters.CarModelsAdapter;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view_models.HomeViewModel;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.R;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.databinding.ActivityHomeBinding;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
+import com.dev_abdallah_el_zoka.softxpert_android_task.view.adpaters.CarModelsAdapter;
+import com.dev_abdallah_el_zoka.softxpert_android_task.view_models.HomeViewModel;
+import com.dev_abdallah_el_zoka.softxpert_android_task.R;
+import com.dev_abdallah_el_zoka.softxpert_android_task.databinding.ActivityHomeBinding;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarDataItem;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -23,7 +24,6 @@ import dagger.hilt.android.AndroidEntryPoint;
 
 @AndroidEntryPoint
 public class HomeActivity extends AppCompatActivity {
-    @Inject
     HomeViewModel homeViewModel;
 
     ActivityHomeBinding activityMainBinding;
@@ -33,6 +33,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_home);
+        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         activityMainBinding.carsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         carModelsAdapter = new CarModelsAdapter(new DiffUtil.ItemCallback<CarDataItem>() {
             @Override

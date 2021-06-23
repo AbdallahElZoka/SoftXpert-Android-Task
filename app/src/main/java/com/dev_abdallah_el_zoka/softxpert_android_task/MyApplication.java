@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask;
+package com.dev_abdallah_el_zoka.softxpert_android_task;
 
 import android.app.Application;
 

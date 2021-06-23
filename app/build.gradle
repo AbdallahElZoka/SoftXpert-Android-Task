@@ -14,7 +14,7 @@ android {
         dataBinding true
     }
     defaultConfig {
-        applicationId "com.DevAbdallahEl_Zoka.SoftXpertAndroidTask"
+        applicationId "com.dev_abdallah_el_zoka.softxpert_android_task"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

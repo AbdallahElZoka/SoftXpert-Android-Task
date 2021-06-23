@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view.adpaters;
+package com.dev_abdallah_el_zoka.softxpert_android_task.view.adpaters;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -9,9 +9,9 @@ import androidx.paging.PagingDataAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.R;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.databinding.CarItemUiBinding;
-import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
+import com.dev_abdallah_el_zoka.softxpert_android_task.R;
+import com.dev_abdallah_el_zoka.softxpert_android_task.databinding.CarItemUiBinding;
+import com.dev_abdallah_el_zoka.softxpert_android_task.model.pojo.CarDataItem;
 
 import org.jetbrains.annotations.NotNull;
 

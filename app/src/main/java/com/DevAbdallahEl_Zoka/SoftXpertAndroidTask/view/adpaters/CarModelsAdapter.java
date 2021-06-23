@@ -1,7 +1,6 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask;
+package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view.adpaters;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -10,11 +9,11 @@ import androidx.paging.PagingDataAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.R;
 import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.databinding.CarItemUiBinding;
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
 
 import org.jetbrains.annotations.NotNull;
-
-import java.util.List;
 
 public class CarModelsAdapter extends PagingDataAdapter<CarDataItem, CarModelsAdapter.ViewHolder> {
 

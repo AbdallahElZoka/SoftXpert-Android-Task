@@ -3,11 +3,11 @@
 
     <data>
 
-        <import type="com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.CarDataItem" />
+        <import type="com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem" />
 
         <variable
             name="carDataItem"
-            type="CarDataItem" />
+            type="com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -1,4 +1,6 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask;
+package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.api;
+
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarApiResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

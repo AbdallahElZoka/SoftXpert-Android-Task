@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask;
+package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

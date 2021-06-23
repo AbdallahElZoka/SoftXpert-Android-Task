@@ -1,13 +1,16 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask;
+package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view_models;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelKt;
 import androidx.paging.Pager;
 import androidx.paging.PagingConfig;
 import androidx.paging.PagingData;
 import androidx.paging.PagingLiveData;
+
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.api.WebServices;
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.paging.CarModelsPagingSource;
 
 import javax.inject.Inject;
 
@@ -19,7 +22,7 @@ public class HomeViewModel extends ViewModel {
 
     @Inject
     HomeViewModel(WebServices webServices) {
-
+        this.webServices = webServices;
     }
 
     WebServices webServices;

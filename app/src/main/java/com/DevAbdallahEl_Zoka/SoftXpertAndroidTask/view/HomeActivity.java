@@ -1,4 +1,4 @@
-package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask;
+package com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view;
 
 import android.os.Bundle;
 
@@ -6,12 +6,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.Observer;
-import androidx.paging.PagingData;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view.adpaters.CarModelsAdapter;
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.view_models.HomeViewModel;
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.R;
 import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.databinding.ActivityHomeBinding;
+import com.DevAbdallahEl_Zoka.SoftXpertAndroidTask.model.pojo.CarDataItem;
 
 import org.jetbrains.annotations.NotNull;
 

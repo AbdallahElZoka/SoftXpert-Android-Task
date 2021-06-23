@@ -52,16 +52,17 @@ public class CarModelsPagingSource extends PagingSource<Integer, CarDataItem> {
                 @Override
                 public void onResponse(Call<CarApiResponse> call, Response<CarApiResponse> response) {
                     carApiResponse = response.body();
-                    if (carApiResponse.getStatus() >= 200 || carApiResponse.getStatus() < 300) {
-                        nextKey = carApiResponse.getData().isEmpty() ? null : position + 1;
-                        prevKey = position == startingPage ? null : position - 1;
+                    if (carApiResponse != null)
+                        if (carApiResponse.getStatus() >= 200 || carApiResponse.getStatus() < 300) {
+                            nextKey = carApiResponse.getData().isEmpty() ? null : position + 1;
+                            prevKey = position == startingPage ? null : position - 1;
 
-                    }
+                        }
                 }
 
                 @Override
                 public void onFailure(Call<CarApiResponse> call, Throwable t) {
-                    Log.e("MyTag", "Kindly Check Your Internet Connection :)");
+                    Log.e("MyTag", "Kindly Check Your Internet Connection :)" + t.getLocalizedMessage() + t.getMessage());
                 }
             });
             return new LoadResult.Page(carApiResponse.getData(), prevKey, nextKey);

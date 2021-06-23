@@ -65,7 +65,8 @@ public class CarModelsPagingSource extends PagingSource<Integer, CarDataItem> {
                     Log.e("MyTag", "Kindly Check Your Internet Connection :)" + t.getLocalizedMessage() + t.getMessage());
                 }
             });
-            return new LoadResult.Page(carApiResponse.getData(), prevKey, nextKey);
+            Log.e("MyTag", "will return new Page To The View Model");
+            return new LoadResult.Page<>(carApiResponse.getData(), prevKey, nextKey);
 
         } catch (Exception e) {
             return new LoadResult.Error<Integer, String>(e);

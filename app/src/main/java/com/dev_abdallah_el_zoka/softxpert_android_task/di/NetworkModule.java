@@ -26,7 +26,7 @@ public abstract class NetworkModule {
     @Provides
     @Singleton
     public static Retrofit getRetrofitClient(OkHttpClient okHttpClient) {
-        return new Retrofit.Builder().baseUrl("http://demo1286023.mockable.io/api/v1/").client(okHttpClient).addConverterFactory(GsonConverterFactory.create()).build();
+        return new Retrofit.Builder().baseUrl("http://demo1585915.mockable.io/api/v1/").client(okHttpClient).addConverterFactory(GsonConverterFactory.create()).build();
     }
 
     @Provides
@@ -34,9 +34,8 @@ public abstract class NetworkModule {
     public static OkHttpClient getOkHTTPClientLoggingInterceptor() {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
-        OkHttpClient client = new OkHttpClient.Builder()
+        return new OkHttpClient.Builder()
                 .addInterceptor(logging)
                 .build();
-        return client;
     }
 }
